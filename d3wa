@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة زفاف</title>
+    <style>
+        :root {
+            --rawa:#D4B16A;
+            --royal-gold: #d5be83 ;
+            --gold-light: #e2d1a7;
+            --gold-theme: #d1b46e; 
+            --input-bg: #e6dec1;
+            --btn-gold: #d5b879;
+        }
+
+        body {
+            margin: 0; padding: 0;
+            background-color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            display: flex; justify-content: center;
+        }
+
+        .main-wrapper {
+            width: 100%; max-width: 450px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .invitation-header img { width: 100%; display: block; }
+
+        /* تفاصيل دعوتك */
+        .guest-details-section { padding: 40px 20px; text-align: center; background: #fff; }
+        .section-title { font-size: 1.6rem; color: #333; margin-bottom: 5px; }
+        .title-divider { width: 60px; height: 2px; background: var(--gold-theme); margin: 0 auto 30px; }
+        .info-card { background: #fff; border-radius: 15px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #f0f0f0; }
+        .icon-circle-gold { width: 55px; height: 55px; border-radius: 50%; border: 1.5px solid var(--gold-theme); display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; fill: var(--gold-theme); }
+
+        /* قسم أكد حضورك */
+        .rsvp-gold-area { background-color: var(--royal-gold); padding: 50px 20px; text-align: center; color: white; }
+        .rsvp-gold-area h1 { font-size: 2.8rem; margin: 0 0 40px; font-weight: normal; }
+        
+        .label-right { text-align: right; width: 90%; margin: 0 auto 10px; font-weight: bold; }
+        .required { color: #cc0000; margin-right: 3px; }
+
+        .rsvp-box-container { display: flex; gap: 20px; justify-content: center; margin-bottom: 30px; }
+        .rsvp-option { display: flex; flex-direction: column; align-items: center; }
+        .rsvp-white-box {
+            background: white; width: 110px; height: 120px; border-radius: 8px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            fill: var(--gold-theme);
+        }
+        .radio-dot { width: 18px; height: 18px; border: 1px solid #ccc; border-radius: 50%; margin-top: 15px; }
+        .rsvp-label-text { margin-top: 10px; font-weight: bold; font-size: 1.1rem; color: white; }
+
+        /* حقل الرسالة والزر */
+        .msg-box { width: 90%; background: var(--input-bg); border: none; border-radius: 2px; padding: 15px; height: 20px; color: #555; margin-top: 5px; font-family: inherit; }
+        .btn-container { text-align: right; width: 90%; margin: 25px auto 0; }
+        .btn-send { background: var(--rawa); color: white; border:gold; padding: 10px 45px; border-radius: 5px; cursor: pointer; font-size: 1.2rem; }
+
+        /* الخريطة ملتصقة */
+        .map-container { width: 100%; height: 350px; margin: 0; padding: 0; line-height: 0; }
+        iframe { border: none; width: 100%; height: 100%; }
+
+        /* تفاصيل المناسبة */
+        .location-info-gold { background-color: var(--gold-theme); padding: 40px 20px; text-align: center; color: white; margin-top: 0; }
+        .loc-title { font-size: 1.6rem; margin: 0; }
+        .loc-divider { width: 85%; height: 1px; background: white; margin: 15px auto 40px; }
+        .loc-icon-white { background: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; fill: #333; }
+        .loc-item { margin-bottom: 45px; }
+        .loc-item h3 { font-size: 1.5rem; margin: 10px 0; font-weight: normal; }
+        .loc-item p { margin: 5px 0; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+
+<div class="main-wrapper">
+    <div class="invitation-header">
+        <img src="" alt="Header">
+    </div>
+
+    <div class="guest-details-section">
+        <div class="section-title">تفاصيل دعوتك</div>
+        <div class="title-divider"></div>
+        <div class="info-card">
+            <div class="icon-circle-gold"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div>
+            <div style="font-weight:bold;">الاسم</div>
+            <div style="color:#666; margin-top:5px;">روان الشمسان -</div>
+        </div>
+        <div class="info-card">
+            <div class="icon-circle-gold"><svg width="28" height="28" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+            <div style="font-weight:bold;">عدد المدعوين</div>
+            <div style="color:#666; margin-top:5px;">1</div>
+        </div>
+    </div>
+
+    <div class="rsvp-gold-area">
+        <h1>أكّد حضورك</h1>
+        <div class="label-right">تأكيد الحضور <span class="required">*</span></div>
+        
+        <div class="rsvp-box-container">
+            <div class="rsvp-option">
+                <div class="rsvp-white-box">
+                    <svg width="40" height="40" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    <div class="radio-dot"></div>
+                </div>
+                <div class="rsvp-label-text">تأكيد</div>
+            </div>
+            <div class="rsvp-option">
+                <div class="rsvp-white-box">
+                    <svg width="20" height="20" viewBox="0 0 24 26" style="border: 2.5px solid var(--gold-theme); border-radius: 50%; padding: 4px;"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                    <div class="radio-dot"></div>
+                </div>
+                <div class="rsvp-label-text">اعتذار</div>
+            </div>
+        </div>
+
+        <div class="label-right">رسالة خاصة لصاحب الدعوة (اختياري)</div>
+        <textarea class="msg-box" placeholder="اكتب رسالة خاصة لداعي المناسبة"></textarea>
+        
+        <div class="btn-container">
+            <button class="btn-send">ارسال</button>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.443552044813!2d44.2120!3d25.8670!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDUyJzAxLjIiTiA0NMKwMTInNDMuMiJF!5e0!3m2!1sar!2ssa!4v1700000000000!5m2!1sar!2ssa" loading="lazy"></iframe>
+    </div>
+
+    <div class="location-info-gold">
+        <h2 class="loc-title">تفاصيل المناسبة</h2>
+        <div class="loc-divider"></div>
+
+        <div class="loc-item">
+            <div class="loc-icon-white"><svg width="32" height="32" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+            <h3>المكان</h3>
+            <p>قاعة الجوهرة، طريق الملك عبدالعزيز</p>
+            <p>المذنب، المملكة العربية السعودية</p>
+        </div>
+        <div class="loc-item">
+            <div class="loc-icon-white"><svg width="32" height="32" viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg></div>
+            <h3>التاريخ</h3>
+            <p>03 / 04 / 2026</p>
+        </div>
+        <div class="loc-item">
+            <div class="loc-icon-white"><svg width="32" height="32" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg></div>
+            <h3>الوقت</h3>
+            <p>الاستقبال: 8:30 م</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
